@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dog Generator</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_string">Random Dog Generator!</string>
+    <string name="generate_dogs_string">Generate Dogs!</string>
+    <string name="generate_string">Generate!</string>
+    <string name="clear_string">Clear</string>
+    <string name="recent_string">My recently Generated Dogs!</string>
+</resources>

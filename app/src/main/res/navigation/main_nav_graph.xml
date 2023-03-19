@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.svg.dog_generator.presentation.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_recentDogsFragment"
+            app:destination="@id/recentDogsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_generateDogFragment"
+            app:destination="@id/generateDogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentDogsFragment"
+        android:name="com.svg.dog_generator.presentation.ui.recent_dogs.RecentDogsFragment"
+        android:label="fragment_recent_dogs"
+        tools:layout="@layout/fragment_recent_dogs" />
+    <fragment
+        android:id="@+id/generateDogFragment"
+        android:name="com.svg.dog_generator.presentation.ui.generate_dog.GenerateDogFragment"
+        android:label="fragment_generate_dog"
+        tools:layout="@layout/fragment_generate_dog" />
+</navigation>
